@@ -1,0 +1,23 @@
+{
+  "n_folds": 10,
+  "circumferential": {
+    "mae_kpa": [
+      6.3,
+      1.0
+    ],
+    "ape_kpa": [
+      14.3,
+      4.32
+    ]
+  },
+  "longitudinal": {
+    "mae_kpa": [
+      2.57,
+      0.37
+    ],
+    "ape_kpa": [
+      5.52,
+      1.33
+    ]
+  }
+}

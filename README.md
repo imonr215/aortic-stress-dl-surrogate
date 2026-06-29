@@ -39,9 +39,9 @@ This follows the abstract's design: an **unsupervised** dimensionality-reduction
 stage feeding a **supervised** regressor.
 
 ```
-Aorta geometry            Unsupervised            Supervised           Stress field
-(node coordinates)  ──►   shape PCA  ──►  shape  ──►  neural net  ──►  stress  ──►  inverse  ──►  per-node
-                                          codes       (MLP)            codes       stress PCA     stress
+  Aorta geometry          Unsupervised    shape       Supervised       stress     Stress field   per-node
+(node coordinates)  ──►   shape PCA  ──►  codes  ──►  neural net  ──►  codes  ──►  inverse  ──►  stress
+                                                       (MLP)                      stress PCA     
 ```
 
 1. **Statistical shape model (PCA)** — each aorta is a fixed-topology surface
